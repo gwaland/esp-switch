@@ -1,0 +1,7 @@
+#ssid information 
+ssid='<SSID>'
+ssid_pass='<PASSWORD>'
+#path to the ouimeaux installation
+wemo_ip = '<IP/domain name>'
+plug_name = '<wemo plug id>'
+
