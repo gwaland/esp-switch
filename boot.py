@@ -6,6 +6,14 @@ import esp
 from flashbdev import bdev
 import machine
 
+led = machine.Pin(2, machine.Pin.OUT)
+latch = machine.Pin(0, machine.Pin.OUT)
+latch.high()
+led.high()
+
+
+
+#borrowed from thread in micropython dev github
 ADC_MODE_VCC = 255
 ADC_MODE_ADC = 0
 
