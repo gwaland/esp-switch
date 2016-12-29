@@ -18,12 +18,12 @@ if machine.reset_cause() == machine.DEEPSLEEP_RESET:
 else:
     print('power on or hard reset')
     #comment this out to drop to repl for debuging.
-    machine.deepsleep()
+#    machine.deepsleep()
 
 def trigger_button():
     url = 'http://%s:5000/api/device/%s' % (wemo_ip, plug_name)
     headers = {'Content-Type' : 'text/json; charset=utf-8'}
-	data = '{state: toggle}'
-	resp = urequests.post(url, data=data, headers=headers)
-	print(resp.json())
-	machine.deepsleep()
+    data = '{state: toggle}'
+    resp = urequests.post(url, data=data, headers=headers)
+    print(resp.json())
+#	machine.deepsleep()
