@@ -3,6 +3,7 @@
 
 from config import *
 import esp
+import gc
 from flashbdev import bdev
 import machine
 
@@ -43,3 +44,4 @@ def do_connect():
     print('network config:', sta_if.ifconfig())
 
 set_adc_mode(ADC_MODE_VCC)
+gc.collect()
